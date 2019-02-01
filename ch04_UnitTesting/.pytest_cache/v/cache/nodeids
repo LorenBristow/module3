@@ -1,0 +1,9 @@
+[
+  "ch04_unit_tests.py::prime_test::test_0_is_not_prime",
+  "ch04_unit_tests.py::prime_test::test_1_is_not_prime",
+  "ch04_unit_tests.py::prime_test::test_even_is_not_prime",
+  "ch04_unit_tests.py::prime_test::test_negative_is_not_prime",
+  "ch04_unit_tests.py::prime_test::test_prime_is_prime",
+  "ch04_unit_tests.py::wordcount_test::test_wordcount",
+  "ch04_unit_tests.py::wordcount_test::test_wordcount_type"
+]
