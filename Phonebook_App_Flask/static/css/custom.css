@@ -1,0 +1,12 @@
+button {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.5s;
+
+  label {
+    display: block;
+    margin: 0 0 3px 0;
+  }
