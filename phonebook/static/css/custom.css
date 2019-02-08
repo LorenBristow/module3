@@ -28,7 +28,7 @@ body {
   min-height:2000px;
 }
 
-main{
+main {
   margin-top: 15%;
   margin-bottom: 10%;
 }
@@ -38,14 +38,26 @@ main{
   margin-bottom: 10%;
 }
 
-.btn, #submit-button, #name-submit-button {
+.btn {
   padding: 1.50rem 3rem;
   font-weight: 700;
   font-size: 1.5rem;
   background-color: #28a !important;
   border-color: #28a !important;
   color: #fff !important;
-  margin: 2rem 2rem;
+  margin: 2rem 4rem;
+}
+
+#submit-button, #name-submit-button {
+  margin: 0 0 3px 0;
+  font-size: 1.75rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+
+  background-color: #28a !important;
+  border-color: #28a !important;
+  color: #fff !important;
+
 }
 
 #submit-button, #name-submit-button {
@@ -56,10 +68,40 @@ main{
 #person_search h2 ,#business_search h2 {
   font-size: 4rem;
 }
-a {
-  color: #fff
+
+input {
+  margin-right: 10px;
+  transform: 150%;
 }
 
+/*weird eyes*/
+
+.move-area{/*normally use body*/
+  width: 10vw;
+  height: 10vh;
+  padding: 0% 10%;
+}
+.container {
+  width: 100%;
+}
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background: #CCC;
+}
+.eye:after { /*pupil*/
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+}
 
 /*  #bg_tin_can {
  background-image: url("../images/tin_can_phone.gif");
