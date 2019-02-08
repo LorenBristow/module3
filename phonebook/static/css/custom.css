@@ -1,0 +1,70 @@
+/*html {
+  scroll-behavior: smooth;
+}*/
+
+
+h2 , label {
+  font-size: 5.5rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  line-height: 1.2;
+  color: inherit;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center !important;
+}
+
+label {
+  margin: 0 0 3px 0;
+  font-size: 1.75rem;
+  display: inline-block;
+}
+
+body {
+  background-color: #fc2;
+  min-height:2000px;
+}
+
+main{
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+#person_search , #business_search {
+  padding-top: 25%;
+  margin-bottom: 10%;
+}
+
+.btn, #submit-button, #name-submit-button {
+  padding: 1.50rem 3rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: #28a !important;
+  border-color: #28a !important;
+  color: #fff !important;
+  margin: 2rem 2rem;
+}
+
+#submit-button, #name-submit-button {
+  border-radius: 5px;
+  border: 0px solid red;
+}
+
+#person_search h2 ,#business_search h2 {
+  font-size: 4rem;
+}
+a {
+  color: #fff
+}
+
+
+/*  #bg_tin_can {
+ background-image: url("../images/tin_can_phone.gif");
+
+ background-size: auto;
+ background-repeat: no-repeat;
+ height: 100%;
+}*/
