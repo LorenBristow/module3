@@ -90,7 +90,7 @@ input {
   border-radius: 70%;
   height: 70px;
   width: 70px;
-  background: #CCC;
+  background: white;
 }
 .eye:after { /*pupil*/
   position: absolute;
@@ -103,10 +103,12 @@ input {
   content: " ";
 }
 
-/*  #bg_tin_can {
- background-image: url("../images/tin_can_phone.gif");
+p {
+  font-size: 1.75rem;
+  margin: 5% 0%;
+}
 
- background-size: auto;
- background-repeat: no-repeat;
- height: 100%;
-}*/
+table{
+  width: 100%;
+  font-size: 1.5rem;
+}

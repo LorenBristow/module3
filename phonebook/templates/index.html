@@ -45,13 +45,14 @@
           <input class="form-control-lg" id="postcode" name="postcode" required="required">
           <input type="submit" value="Submit" name="submit" id="submit-button">
         </form>
-        <div class="results" id="ResultsPerson">
+        <div {% if do_not_hide_surname %} class="do_not_hide" {% else %} class="results" {% endif %} id="ResultsPerson">
           <p>You searched for: {{surname}} in {{postcode}}.</p>
           {% if "Sorry" in result %}
           <p>Your search does not exist in our database. Exterminate.</p>
           {% else %}
           <!--{{result}}-->
-          <table class="centered thick-border">
+        <div class="container col-md-12 text-center">
+            <table>
             <tr>
               <th>Surname</th>
               <th>Firstname</th>
@@ -73,6 +74,7 @@
             </tr>
             {% endfor %}
           </table>
+        </div> <!-- /table -->
           {% endif %}
         </div><!-- /.results -->
 
@@ -99,8 +101,11 @@
           <input class="form-control-lg" id="name_postcode" name="postcode" required="required">
           <input type="submit" value="Submit" name="submit" id="name-submit-button">
         </form>
-        <div class="results">
+        <div {% if do_not_hide_name %} class="do_not_hide" {% else %} class="results" {% endif %}>
           <p>You searched for: {{name}} in {{postcode}}.</p>
+          {% if "Sorry" in result %}
+          <p>Your search does not exist in our database. Exterminate.</p>
+          {% else %}
           <!--{{result}}-->
           <table class="centered thick-border">
             <tr>
@@ -124,7 +129,7 @@
             </tr>
             {% endfor %}
           </table>
-
+          {% endif %}
         </div><!-- /.results -->
 
       </div><!-- /#name-search-form -->
@@ -137,8 +142,11 @@
           <input class="form-control-lg" id="business_postcode" name="postcode" required="required">
           <input type="submit" value="Submit" name="submit" id="submit-button">
         </form>
-        <div class="results">
-          <p>You searched for: {{category}} in {{postcode}}.</p>
+        <div {% if do_not_hide_category %} class="do_not_hide" {% else %} class="results" {% endif %}>
+          <p>You searched for: {{business_category}} in {{postcode}}.</p>
+          {% if "Sorry" in result %}
+          <p>Your search does not exist in our database. Exterminate.</p>
+          {% else %}
           <!--{{result}}-->
           <table class="centered thick-border">
             <tr>
@@ -162,6 +170,7 @@
             </tr>
             {% endfor %}
           </table>
+          {% endif %}
         </div><!-- /.results -->
 
       </div><!-- /#category-search-form -->
