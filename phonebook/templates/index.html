@@ -38,15 +38,18 @@
       <h2> Who are you looking for? </h2>
 
       <div id="contact-form">
-        <form method="post" action="/">
+        <form method="post" action="/#person_search" onsubmit="SearchSummaryReveal">
           <label for="surname">Name:</label>
           <input class="form-control-lg" id="surname" name="surname" required="required">
           <label for="postcode ">Postcode:</label>
-          <input class="form-control-lg" id="postcode" name="postcode">
-          <button onclick="ScrollToPersonSearch()"><input type="submit" value="Submit" name="submit" id="submit-button"></button>
+          <input class="form-control-lg" id="postcode" name="postcode" required="required">
+          <input type="submit" value="Submit" name="submit" id="submit-button">
         </form>
-        <div id="ResultsPerson">
+        <div class="results" id="ResultsPerson">
           <p>You searched for: {{surname}} in {{postcode}}.</p>
+          {% if "Sorry" in result %}
+          <p>Your search does not exist in our database. Exterminate.</p>
+          {% else %}
           <!--{{result}}-->
           <table class="centered thick-border">
             <tr>
@@ -70,6 +73,7 @@
             </tr>
             {% endfor %}
           </table>
+          {% endif %}
         </div><!-- /.results -->
 
       </div> <!-- /#contact-form -->
@@ -88,11 +92,11 @@
 
 
       <div id="name-search-form" {% if do_not_hide_name %} class="do_not_hide" {% endif %}>
-        <form method="post" action="/">
+        <form method="post" action="/#business_search">
           <label for="name">Name:</label>
-          <input class="form-control-lg" id="name" name="name">
+          <input class="form-control-lg" id="name" name="name" required="required">
           <label for="postcode ">Postcode:</label>
-          <input class="form-control-lg" id="name_postcode" name="postcode">
+          <input class="form-control-lg" id="name_postcode" name="postcode" required="required">
           <input type="submit" value="Submit" name="submit" id="name-submit-button">
         </form>
         <div class="results">
@@ -126,11 +130,11 @@
       </div><!-- /#name-search-form -->
 
       <div id="category-search-form" {% if do_not_hide_category %} class="do_not_hide" {% endif %}>
-        <form method="post" action="/">
+        <form method="post" action="/#business_search">
           <label for="category">Type:</label>
-          <input class="form-control-lg" id="category" name="category">
+          <input class="form-control-lg" id="category" name="category" required="required">
           <label for="postcode ">Postcode:</label>
-          <input class="form-control-lg" id="business_postcode" name="postcode">
+          <input class="form-control-lg" id="business_postcode" name="postcode" required="required">
           <input type="submit" value="Submit" name="submit" id="submit-button">
         </form>
         <div class="results">

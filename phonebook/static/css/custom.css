@@ -87,17 +87,17 @@ input {
 .eye {
   position: relative;
   display: inline-block;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  border-radius: 70%;
+  height: 100px;
+  width: 100px;
   background: #CCC;
 }
 .eye:after { /*pupil*/
   position: absolute;
-  bottom: 17px;
-  right: 10px;
-  width: 10px;
-  height: 10px;
+  bottom: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
   background: #000;
   border-radius: 50%;
   content: " ";

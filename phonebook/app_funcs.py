@@ -79,7 +79,7 @@ def person_search_results(surname, postcode):
                  person_results_list.append(person_dict)
              return sort_by_distance(person_results_list)
          else:
-             return "Please re-type the postcode including a space in the correct place."
+             return "Sorry, please re-type the postcode including a space in the correct place."
 
 def business_search_results(business_name_or_category, postcode, business_search_type):
     if business_search_type == "name":
@@ -87,7 +87,7 @@ def business_search_results(business_name_or_category, postcode, business_search
     elif business_search_type == "category":
         business_result = get_businessCategory_data(business_name_or_category)
     else:
-        return "error"
+        return "Sorry, error"
     if len(business_result) == 0:
         return "Sorry, your search produced no results."
     else:
