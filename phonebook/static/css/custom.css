@@ -88,8 +88,8 @@ input {
   position: relative;
   display: inline-block;
   border-radius: 70%;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   background: #CCC;
 }
 .eye:after { /*pupil*/

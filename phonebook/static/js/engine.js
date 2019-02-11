@@ -27,15 +27,15 @@ $("#category_button").click(function(event) {
   $("#name-search-form").hide();
   });
 
-function ScrollToPersonSearch() {
-  var elmnt = document.getElementById("person_search");
-  elmnt.scrollIntoView();
-}
+//function ScrollToPersonSearch() {
+//  var elmnt = document.getElementById("person_search");
+//  elmnt.scrollIntoView();
+//}
 
-function ScrollToBusinessSearch() {
-  var elmnt = document.getElementById("business_search");
-  elmnt.scrollIntoView();
-}
+//function ScrollToBusinessSearch() {
+//  var elmnt = document.getElementById("business_search");
+//  elmnt.scrollIntoView();
+//}
 
 
 $(".move-area").mousemove(function(event) {
